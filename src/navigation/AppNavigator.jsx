@@ -13,7 +13,7 @@ const Stack = createNativeStackNavigator();
 export default function AppNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{contentStyle:{backgroundColor:"#fff"}}}>
         <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Question" component={Question} />
       </Stack.Navigator>
